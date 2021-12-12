@@ -1,0 +1,22 @@
+### acessando via get
+GET http://localhost:3000/subscribers
+###
+POST http://localhost:3000/subscribers
+content-Type: application/json
+
+{
+    "userName": "Cliente TESTE",
+    "userChannel": "Udax"
+}
+###
+GET http://localhost:3000/subscribers/61b5f293f64c1c793549a726
+###
+DELETE  http://localhost:3000/subscribers/61b5e2e3cd9dabe9f994f8e1
+###
+PATCH  http://localhost:3000/subscribers/61b5e33c24fad81acbecaad2
+content-Type: application/json
+
+{
+    "userName": "Alex",
+    "userChannel": "Udax"
+}
